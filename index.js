@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const route = require("./route");
 
-mongoose.connect("mongodb+srv://nj:12345@cluster0.r1bv4.mongodb.net/Students?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
+mongoose.connect("mongodb+srv://nj:12345@cluster0.r1bv4.mongodb.net/student?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
 ()=>{
         const app = express();
         app.use("/api",route);
